@@ -22,6 +22,7 @@ function M.load()
 
     apply_highlights(require("mrok.groups.base").get(colors))
     apply_highlights(require("mrok.groups.syntax").get(colors))
+    apply_highlights(require("mrok.groups.treesitter").get(colors))
 end
 
 return M

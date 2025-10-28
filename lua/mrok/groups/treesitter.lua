@@ -1,0 +1,57 @@
+local M = {}
+
+---@type mrok.HighlightsFn
+function M.get(c)
+    -- stylua: ignore
+    return {
+        ["@attribute"]                      = { fg = c.blue },
+        ["@boolean"]                        = "Boolean",
+        ["@character"]                      = "Character",
+        ["@character.special"]              = "Special",
+        ["@comment"]                        = "Comment",
+        ["@constant"]                       = "Constant",
+        ["@constant.builtin"]               = "Constant",
+        ["@constant.identifier.javascript"] = "Variable",
+        ["@constant.identifier.tsx"]        = "Variable",
+        ["@constant.identifier.typescript"] = "Variable",
+        ["@constant.macro"]                 = "Macro",
+        ["@constructor"]                    = { fg = c.orange },
+        ["@constructor.lua"]                = "Delimiter",
+        ["@define"]                         = "Define",
+        ["@error"]                          = "Error",
+        ["@field.lua"]                      = { fg = c.cyan },
+        ["@function"]                       = "Function",
+        ["@function.builtin"]               = "Function",
+        ["@function.macro"]                 = "Macro",
+        ["@keyword"]                        = "Keyword",
+        ["@label"]                          = "Label",
+        ["@method"]                         = "Function",
+        ["@module"]                         = { fg = c.orange },
+        ["@number"]                         = "Number",
+        ["@number.float"]                   = "Float",
+        ["@operator"]                       = "Operator",
+        ["@parameter"]                      = "Variable",
+        ["@preproc"]                        = "PreProc",
+        ["@property"]                       = { fg = c.blue },
+        ["@punctuation"]                    = "Delimiter",
+        ["@punctuation.string.delimiter"]   = "String",
+        ["@string"]                         = "String",
+        ["@string.escape"]                  = { fg = c.orange },
+        ["@string.regexp"]                  = { fg = c.orange },
+        ["@string.special"]                 = "Special",
+        ["@tag"]                            = "Tag",
+        ["@tag.attribute"]                  = "@attribute",
+        ["@tag.builtin.jsx"]                = "Tag",
+        ["@tag.builtin.tsx"]                = "Tag",
+        ["@tag.component.jsx.tsx"]          = "Type",
+        ["@tag.delimiter"]                  = "Punctuation",
+        ["@type"]                           = "Type",
+        ["@type.builtin"]                   = "Type",
+        ["@type.definition"]                = "Type",
+        ["@variable"]                       = "Variable",
+        ["@variable.builtin"]               = { fg = c.orange },
+        ["@variable.parameter"]             = "Variable",
+    }
+end
+
+return M
