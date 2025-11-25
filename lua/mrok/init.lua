@@ -51,6 +51,7 @@ function M.load()
     apply_highlights(require("mrok.groups.syntax").get(colors))
     apply_highlights(require("mrok.groups.treesitter").get(colors))
     apply_highlights(require("mrok.groups.diagnostics").get(colors))
+    apply_highlights(require("mrok.groups.lsp").get(colors))
 
     load_integrations(colors)
 end
